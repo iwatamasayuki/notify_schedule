@@ -1,0 +1,11 @@
+<%= form_with model: @schedule, class: 'form' do |f| %>
+  <%= f.label :created_at, "登録日を選択", class: 'lavel' %>
+  <%= f.date_field :date, class: 'date-select' %>
+  <%= f.label :created_at,"登録時間を選択", class: 'label' %>
+  <%= f.time_field :created_at, class: 'form-control'%>
+  <%= f.label :予定のタイトルを入力, class: 'lavel' %>
+  <%= f.text_field :plan, class: 'text-input' %>
+  <%= f.label :予定の内容を入力, class: 'lavel' %>
+  <%= f.text_field :plan, class: 'text-input' %>
+  <%= f.submit '保存' %>
+<% end %>
